@@ -252,51 +252,6 @@
   });
 
   /**
-   * Handle contact form submission
-   */
-  let contactForm = document.getElementById("contactForm");
-  contactForm.addEventListener("submit", function (event) {
-    console.log(event);
-    // Keep on same page
-    event.preventDefault();
-
-    // Build data form
-    let name = document.getElementById("contactForm").elements["name"].value;
-    let mailFrom =
-      document.getElementById("contactForm").elements["email"].value;
-    let subject =
-      document.getElementById("contactForm").elements["subject"].value;
-    let message =
-      document.getElementById("contactForm").elements["message"].value;
-
-    let data = {
-      name: name,
-      mailFrom: mailFrom,
-      subject: subject,
-      message: message,
-    };
-
-    // call php file
-    fetch("contact.php", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/type",
-      },
-      body: JSON.stringify(data),
-    })
-      .then(function (response) {
-        if (response.ok) {
-          console.log("Working");
-        } else {
-          console.log("Broken");
-        }
-      })
-      .catch(function (error) {
-        console.log("Error", error);
-      });
-  });
-
-  /**
    * Initiate Pure Counter
    */
   new PureCounter();
