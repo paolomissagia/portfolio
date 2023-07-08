@@ -14,9 +14,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Send the email
     if (mail($to, $subject, $body)) {
-        echo "Thank you for your message!"
+        http_response_code(200);
+        echo "Thank you for your message!";
     } else {
-        echo "Error!"
+        http_response_code(500);
+        echo "Something went wrong";
     }
-
+} else {
+    http_response_code(400);
+    echo "Bad Request";
 }

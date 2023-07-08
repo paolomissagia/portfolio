@@ -1,5 +1,5 @@
 (function () {
-  "use strict";
+  ("use strict");
 
   /**
    * Easy selector helper function
@@ -249,6 +249,50 @@
       once: true,
       mirror: false,
     });
+  });
+
+  /**
+   * Handle contact form submission
+   */
+  let contactForm = document.querySelector(".contact-form");
+  contactForm.addEventListener("submit", function (event) {
+    // Keep on same page
+    event.preventDefault();
+
+    // Build data form
+    let name = document.querySelector(".contact-form").elements["name"].value;
+    let mailFrom =
+      document.querySelector(".contact-form").elements["email"].value;
+    let subject =
+      document.querySelector(".contact-form").elements["subject"].value;
+    let message =
+      document.querySelector(".contact-form").elements["message"].value;
+
+    let data = {
+      name: name,
+      mailFrom: mailFrom,
+      subject: subject,
+      message: message,
+    };
+
+    // call php file
+    fetch("contact.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/type",
+      },
+      body: JSON.stringify(data),
+    })
+      .then(function (response) {
+        if (response.ok) {
+          console.log("Working");
+        } else {
+          console.log("Broken");
+        }
+      })
+      .catch(function (error) {
+        console.log("Error", error);
+      });
   });
 
   /**
