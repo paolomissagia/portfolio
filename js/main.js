@@ -254,19 +254,20 @@
   /**
    * Handle contact form submission
    */
-  let contactForm = document.querySelector(".contact-form");
+  let contactForm = document.getElementById("contactForm");
   contactForm.addEventListener("submit", function (event) {
+    console.log(event);
     // Keep on same page
     event.preventDefault();
 
     // Build data form
-    let name = document.querySelector(".contact-form").elements["name"].value;
+    let name = document.getElementById("contactForm").elements["name"].value;
     let mailFrom =
-      document.querySelector(".contact-form").elements["email"].value;
+      document.getElementById("contactForm").elements["email"].value;
     let subject =
-      document.querySelector(".contact-form").elements["subject"].value;
+      document.getElementById("contactForm").elements["subject"].value;
     let message =
-      document.querySelector(".contact-form").elements["message"].value;
+      document.getElementById("contactForm").elements["message"].value;
 
     let data = {
       name: name,
