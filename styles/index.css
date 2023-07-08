@@ -245,7 +245,7 @@ h6 {
 
 /* General sections */
 section {
-  padding: 60px 0;
+  padding: 115px 0;
   overflow: hidden;
 }
 
@@ -292,7 +292,7 @@ section {
 
 /* Hero Section */
 #hero {
-  background: url("../assets/img/hero.jpg") top right no-repeat;
+  background: url("../assets/img/hero-bg.jpg") top right no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
@@ -400,6 +400,10 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
+}
+
+.rounded-img {
+  border-radius: 50%;
 }
 
 /* Portfolio */
