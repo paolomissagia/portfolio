@@ -251,6 +251,30 @@
     });
   });
 
+  emailjs.init("i1kmVa0DUH80P1yem");
+
+  let contactForm = document.getElementById("contactForm");
+  contactForm.addEventListener("submit", function (event) {
+    //
+    event.preventDefault();
+    document.querySelector(".sent-message").classList.remove("d-block");
+    document.querySelector(".error-message").classList.remove("d-block");
+    document.querySelector(".loading").classList.add("d-block");
+
+    //
+    emailjs
+      .sendForm("service_9edhse8", "template_jwhpwom", this)
+      .then(function () {
+        document.querySelector(".sent-message").classList.add("d-block");
+      }),
+      function () {
+        document.querySelector(".error-message").classList.add("d-block");
+      };
+
+    document.querySelector(".loading").classList.remove("d-block");
+    contactForm.reset();
+  });
+
   /**
    * Initiate Pure Counter
    */

@@ -12,8 +12,6 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
     />
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
     <link
@@ -32,6 +30,11 @@
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
     <!-- Template Main CSS File -->
     <link href="./styles/index.css" rel="stylesheet" />
+    <!-- EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
   </head>
 
   <!-- Body starts -->
@@ -371,24 +374,6 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/typed.js/typed.umd.js"></script>
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script type="text/javascript">
-      // this is the id of the form
-      $("#contactForm").submit(function (e) {
-        e.preventDefault(); // avoid to execute the actual submit of the form.
-
-        var form = $(this);
-        var actionUrl = form.attr("action");
-
-        $.ajax({
-          type: "POST",
-          url: contact.php,
-          data: form.serialize(), // serializes the form's elements.
-          success: function (data) {
-            alert(data); // show response from the php script.
-          },
-        });
-      });
-    </script>
     <!-- Template Main JS File -->
     <script src="./js/main.js"></script>
   </body>
