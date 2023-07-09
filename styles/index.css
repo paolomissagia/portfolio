@@ -444,6 +444,7 @@ section {
 }
 
 .portfolio .portfolio-wrap {
+  max-height: 500px;
   transition: 0.3s;
   position: relative;
   overflow: hidden;
