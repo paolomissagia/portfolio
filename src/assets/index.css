@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-primary font-mono text-secondary mx-auto w-1/2;
+    @apply bg-primary font-mono text-base mx-auto w-1/2;
   }
 
   main {
@@ -13,7 +13,7 @@
 
   header {
     .active span {
-      @apply text-accent;
+      @apply text-secondary;
     }
   }
 }
