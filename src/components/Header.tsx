@@ -3,12 +3,12 @@ export default function Header() {
         <header className="container border-b border-b-accent py-8">
             <nav className="flex flex-row justify-between">
                 <div>
-                    pmissagia
+                    pmissagia$
                 </div>
                 <ul className="flex flex-row gap-5">
-                    <li>Projects</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
