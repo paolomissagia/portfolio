@@ -10,4 +10,10 @@
   main {
     height: calc(100vh - 89px - 89px);
   }
+
+  header {
+    .active span {
+      @apply text-accent;
+    }
+  }
 }
