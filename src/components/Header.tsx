@@ -19,7 +19,7 @@ export default function Header() {
     return (
         <header className="border-b border-b-accent text-xl flex flex-col sm:flex-row justify-between items-center">
             <div className="flex justify-between items-center w-full sm:w-auto py-4 sm:py-8">
-                <NavLink to="/">user@paolomissagia<span className="text-secondary">$</span></NavLink>
+                <NavLink to="/">user@paolomissagia$</NavLink>
                 <button className="sm:hidden" onClick={toggleMenuOpen}>
                     {isMenuOpen ? <FiX size={"1.2em"} /> : <FiMenu size={"1.2em"} />}
                 </button>

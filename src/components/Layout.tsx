@@ -6,7 +6,7 @@ export default function Layout() {
     return (
         <>
             < Header />
-            <main className="pt-12 pb-12">
+            <main className="py-8 sm:py-12">
                 <Outlet />
             </main>
             < Footer />

@@ -4,11 +4,13 @@ import { NavLink } from "react-router-dom";
 export default function Home() {
     return (
         <section>
-            <h1 className="text-3xl font-bold mb-12 sm:text-5xl">Hi, I'm Paolo</h1>
+            <div className="mb-8 sm:mb-12">
+                <span className="text-3xl font-bold sm:text-5xl">Hi, I'm Paolo</span>
+            </div>
             <div className="flex flex-col gap-8 text-xl">
                 <h2>Full Stack Developer @ Mapal Group</h2>
-                <h2>Check out my personal <NavLink to="/projects" className="underline decoration-dashed decoration-2 underline-offset-4">projects</NavLink></h2>
-                <h2>View my <NavLink to="/cv.pdf" className="underline decoration-dashed decoration-2 underline-offset-4">CV</NavLink> for more professional details</h2>
+                <h2>Check out my personal <NavLink to="/projects" className="text-secondary underline decoration-dashed decoration-2 underline-offset-4">projects</NavLink></h2>
+                <h2>View my <NavLink to="/cv.pdf" className="text-secondary underline decoration-dashed decoration-2 underline-offset-4">CV</NavLink> for more professional details</h2>
                 <h2>Reach me out on my social links</h2>
                 <div className="flex flex-row gap-5">
                     <a href="https://github.com/paolomissagia" target="_blank"><FiGithub size={"1.5em"} /></a>
