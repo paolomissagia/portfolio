@@ -1,7 +1,7 @@
 export default function Projects() {
     return (
-        <div>
-            <h1>PROJECTS</h1>
-        </div>
+        <section>
+            <h1>IN PROGRESS</h1>
+        </section>
     )
 }
