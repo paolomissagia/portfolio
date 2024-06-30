@@ -8,11 +8,11 @@
   }
 
   main {
-    @apply h-[calc(100vh-61px-61px)] sm:h-[calc(100vh-93px-93px)];
+    @apply h-[calc(100svh-61px-89px)] sm:h-[calc(100svh-93px-93px)];
   }
 
   body.menu-open main {
-    @apply h-[calc(100vh-217px-61px)] sm:h-[calc(100vh-93px-93px)];
+    @apply h-[calc(100svh-217px-89px)] sm:h-[calc(100svh-93px-93px)];
   }
 
   header {
