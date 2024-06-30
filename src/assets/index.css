@@ -15,8 +15,8 @@
     @apply h-[calc(100svh-217px-89px)] sm:h-[calc(100svh-93px-93px)];
   }
 
-  header {
-    .active span {
+  header nav {
+    .active {
       @apply text-secondary;
     }
   }
