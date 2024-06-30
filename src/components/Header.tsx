@@ -1,11 +1,19 @@
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaHamburger, FaRegWindowClose } from "react-icons/fa";
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenuOpen = () => setIsMenuOpen(!isMenuOpen);
+
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.body.classList.add('menu-open');
+        } else {
+            document.body.classList.remove('menu-open');
+        }
+    }, [isMenuOpen]);
 
     return (
         <header className="border-b border-b-accent text-xl flex flex-col sm:flex-row justify-between items-center">
@@ -15,8 +23,8 @@ export default function Header() {
                     {isMenuOpen ? <FaRegWindowClose size={"1.2em"} /> : <FaHamburger size={"1.2em"} />}
                 </button>
             </div>
-            <nav className={`w-full sm:w-auto ${isMenuOpen ? 'block' : 'hidden'} sm:block`}>
-                <ul className="flex flex-col sm:flex-row sm:gap-5 items-center sm:items-stretch">
+            <nav className={`w-full sm:w-auto ${isMenuOpen ? 'block menu-open' : 'hidden'} sm:block`}>
+                <ul className="flex flex-col sm:flex-row gap-5 items-center sm:items-stretch py-4">
                     <li>
                         <NavLink to="/" onClick={() => setIsMenuOpen(false)}>home<span>/</span></NavLink>
                     </li>

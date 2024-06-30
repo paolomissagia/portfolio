@@ -8,7 +8,11 @@
   }
 
   main {
-    height: calc(100vh - 93px - 93px);
+    @apply h-[calc(100vh-61px-61px)] sm:h-[calc(100vh-93px-93px)];
+  }
+
+  body.menu-open main {
+    @apply h-[calc(100vh-217px-61px)] sm:h-[calc(100vh-93px-93px)];
   }
 
   header {
