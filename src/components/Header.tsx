@@ -32,9 +32,6 @@ export default function Header() {
                     <li>
                         <NavLink to="/projects" onClick={() => setIsMenuOpen(false)}>projects<span>/</span></NavLink>
                     </li>
-                    <li>
-                        <NavLink to="/contact" onClick={() => setIsMenuOpen(false)}>contact<span>/</span></NavLink>
-                    </li>
                 </ul>
             </nav>
         </header>
