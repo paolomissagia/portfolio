@@ -6,7 +6,7 @@ export default function Layout() {
     return (
         <>
             < Header />
-            <main className="py-8 overflow-auto sm:py-12">
+            <main className="py-5 overflow-auto sm:py-12">
                 <Outlet />
             </main>
             < Footer />

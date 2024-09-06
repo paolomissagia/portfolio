@@ -3,7 +3,7 @@ import Project from "../components/Project"
 export default function Projects() {
     return (
         <section>
-            <h1 className="text-4xl mb-12">Projects</h1>
+            <h1 className="text-4xl mb-6 sm:mb-12">Projects</h1>
             <div className="flex flex-col gap-7">
                 <Project
                     name="Primadonna"
