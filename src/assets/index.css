@@ -6,18 +6,4 @@
   body {
     @apply bg-primary font-mono text-base px-4 mx-auto w-full max-w-3xl;
   }
-
-  main {
-    @apply h-[calc(100svh-61px-61px)] sm:h-[calc(100svh-93px-93px)];
-  }
-
-  body.menu-open main {
-    @apply h-[calc(100svh-217px-61px)] sm:h-[calc(100svh-93px-93px)];
-  }
-
-  header nav {
-    .active {
-      @apply text-secondary;
-    }
-  }
 }
