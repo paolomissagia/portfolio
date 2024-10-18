@@ -8,7 +8,7 @@ export default function Layout() {
         <>
             < Header />
             <HorizontalBar color="accent" />
-            <main className="py-8">
+            <main className="py-10">
                 <Outlet />
             </main>
             <HorizontalBar color="accent" />
