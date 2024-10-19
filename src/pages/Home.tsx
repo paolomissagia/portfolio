@@ -67,19 +67,19 @@ export default function Home() {
             name="Primadonna"
             url="https://primadonna.vercel.app"
             date="17 April 2024"
-            description="Find in-deep information about the opera world."
+            description="In-deep information about the fascinating world of opera"
           />
           <Project
             name="Big Three"
             url="https://bigthree.vercel.app"
             date="6 April 2024"
-            description="Numbers about the the tennis GOATs"
+            description="Statistics about the the best tennis players ever"
           />
           <Project
             name="Cultural Roadmap"
             url="https://culturalroadmap.vercel.app"
             date="20 November 2023"
-            description="Interactive guides for classical music, books and films."
+            description="Interactive guides for classical music, books and films - curated by me"
           />
         </div>
       </section>
