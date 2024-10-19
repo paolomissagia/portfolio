@@ -4,6 +4,6 @@
 
 @layer base {
   body {
-    @apply bg-primary font-mono text-base px-4 mx-auto w-full max-w-3xl;
+    @apply mx-auto w-full max-w-3xl bg-primary px-4 font-mono text-base;
   }
 }

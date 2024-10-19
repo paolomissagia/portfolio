@@ -4,15 +4,15 @@ import Footer from "./Footer";
 import HorizontalBar from "./HorizontalBar";
 
 export default function Layout() {
-    return (
-        <>
-            < Header />
-            <HorizontalBar color="accent" />
-            <main className="py-10">
-                <Outlet />
-            </main>
-            <HorizontalBar color="accent" />
-            < Footer />
-        </>
-    )
+  return (
+    <>
+      <Header />
+      <HorizontalBar color="accent" />
+      <main className="py-10">
+        <Outlet />
+      </main>
+      <HorizontalBar color="accent" />
+      <Footer />
+    </>
+  );
 }
