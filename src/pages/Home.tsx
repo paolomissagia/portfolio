@@ -1,5 +1,5 @@
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
-import { SiCodewars } from "react-icons/si";
+import { SiLeetcode } from "react-icons/si";
 import Project from "../components/Project";
 
 export default function Home() {
@@ -39,7 +39,7 @@ export default function Home() {
             for detailed professional information
           </h2>
           <h2>Reach me out for a chat</h2>
-          <div className="flex flex-row gap-4">
+          <div className="flex flex-row gap-3">
             <a href="https://github.com/paolomissagia" target="_blank">
               <FiGithub size={"1.3em"} className="text-secondary" />
             </a>
@@ -49,8 +49,8 @@ export default function Home() {
             <a href="mailto:hello@paolomissagia.com">
               <FiMail size={"1.3em"} className="text-secondary" />
             </a>
-            <a href="https://www.codewars.com/users/paolomissagia">
-              <SiCodewars size={"1.3em"} className="text-secondary" />
+            <a href="https://leetcode.com/u/pmissagia">
+              <SiLeetcode size={"1.3em"} className="text-secondary" />
             </a>
           </div>
         </div>
