@@ -7,11 +7,11 @@ export default function Layout() {
   return (
     <>
       <Header />
-      <HorizontalBar color="accent" />
+      <HorizontalBar />
       <main className="py-9">
         <Outlet />
       </main>
-      <HorizontalBar color="accent" />
+      <HorizontalBar />
       <Footer />
     </>
   );
