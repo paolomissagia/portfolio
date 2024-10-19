@@ -7,7 +7,7 @@
     @apply mx-auto w-full max-w-3xl bg-primary px-4 font-mono text-base;
   }
 
-  .box {
+  .custom-border {
     background-image: repeating-linear-gradient(
       90deg,
       #ff757f,

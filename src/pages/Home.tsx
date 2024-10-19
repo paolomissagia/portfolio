@@ -56,7 +56,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="box h-1 w-2/3 self-center" />
+      <div className="custom-border h-1 w-2/3 self-center" />
 
       <section id="projectsBlock" className="mt-6">
         <div className="mb-5">
