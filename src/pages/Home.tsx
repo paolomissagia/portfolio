@@ -1,22 +1,31 @@
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import { SiCodewars } from "react-icons/si";
-import { NavLink } from "react-router-dom";
 import Project from "../components/Project";
 
 export default function Home() {
+  function smoothScroll() {
+    document.querySelector("#projectsBlock")?.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+
   return (
     <div className="flex flex-col gap-6">
-      <section id="mainBlock">
+      <section id="mainBlock" className="mb-6">
         <div className="mb-8">
-          <span className="text-[40px]">Hi, I'm Paolo</span>
+          <span className="text-3xl sm:text-[38px]">Hi, I'm Paolo</span>
         </div>
-        <div className="flex flex-col gap-5 text-xl">
+        <div className="flex flex-col gap-5 text-lg sm:text-xl">
           <h2>Full Stack Developer @ Mapal Group</h2>
           <h2>
             Explore my personal{" "}
-            <NavLink to="/projects" className="text-secondary underline">
+            <span
+              className="cursor-pointer text-secondary underline"
+              onClick={() => smoothScroll()}
+            >
               projects
-            </NavLink>
+            </span>{" "}
+            below
           </h2>
           <h2>
             View my{" "}
@@ -30,28 +39,26 @@ export default function Home() {
             for detailed professional information
           </h2>
           <h2>Reach me out for a chat</h2>
-          <div className="flex flex-row gap-3">
+          <div className="flex flex-row gap-4">
             <a href="https://github.com/paolomissagia" target="_blank">
-              <FiGithub size={"1.2em"} className="text-secondary" />
+              <FiGithub size={"1.3em"} className="text-secondary" />
             </a>
             <a href="https://linkedin.com/in/paolomissagia" target="_blank">
-              <FiLinkedin size={"1.2em"} className="text-secondary" />
+              <FiLinkedin size={"1.3em"} className="text-secondary" />
             </a>
             <a href="mailto:hello@paolomissagia.com">
-              <FiMail size={"1.2em"} className="text-secondary" />
+              <FiMail size={"1.3em"} className="text-secondary" />
             </a>
             <a href="https://www.codewars.com/users/paolomissagia">
-              <SiCodewars size={"1.2em"} className="text-secondary" />
+              <SiCodewars size={"1.3em"} className="text-secondary" />
             </a>
           </div>
         </div>
       </section>
 
-      <div className="w-100">
-        <hr className="border-t-sm mx-auto w-[65%] border-dashed text-accent" />
-      </div>
+      <div className="box h-1 w-2/3 self-center" />
 
-      <section id="projectsBlock">
+      <section id="projectsBlock" className="mt-6">
         <div className="mb-5">
           <span className="text-2xl">Projects</span>
         </div>

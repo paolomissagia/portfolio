@@ -6,4 +6,17 @@
   body {
     @apply mx-auto w-full max-w-3xl bg-primary px-4 font-mono text-base;
   }
+
+  .box {
+    background-image: repeating-linear-gradient(
+      90deg,
+      #ff757f,
+      #ff757f 12px,
+      transparent 12px,
+      transparent 25px
+    );
+    background-position: left top;
+    background-repeat: repeat-x;
+    background-size: 100% 1px;
+  }
 }
