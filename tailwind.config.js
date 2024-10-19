@@ -15,5 +15,4 @@ export default {
       mono: ["JetBrains Mono"],
     },
   },
-  plugins: ["prettier-plugin-tailwindcss"],
 };
