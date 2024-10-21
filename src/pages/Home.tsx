@@ -1,4 +1,5 @@
-import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import { FiGithub, FiMail } from "react-icons/fi";
+import { FaLinkedin } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import Project from "../components/Project";
 
@@ -40,11 +41,11 @@ export default function Home() {
           </h2>
           <h2>Reach me out for a chat</h2>
           <div className="flex flex-row gap-3">
+            <a href="https://linkedin.com/in/paolomissagia" target="_blank">
+              <FaLinkedin size={"1.3em"} className="text-secondary" />
+            </a>
             <a href="https://github.com/paolomissagia" target="_blank">
               <FiGithub size={"1.3em"} className="text-secondary" />
-            </a>
-            <a href="https://linkedin.com/in/paolomissagia" target="_blank">
-              <FiLinkedin size={"1.3em"} className="text-secondary" />
             </a>
             <a href="mailto:hello@paolomissagia.com">
               <FiMail size={"1.3em"} className="text-secondary" />
@@ -56,7 +57,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="custom-border h-1 w-2/3 self-center" />
+      <div className="custom-border h-1 w-3/4 self-center" />
 
       <section id="projectsBlock" className="mt-6">
         <div className="mb-5">
@@ -66,19 +67,19 @@ export default function Home() {
           <Project
             name="Primadonna"
             url="https://primadonna.vercel.app"
-            date="17 April 2024"
+            date="October 2024"
             description="In-deep information about the fascinating world of opera"
           />
           <Project
             name="Big Three"
             url="https://bigthree.vercel.app"
-            date="6 April 2024"
+            date="February 2024"
             description="Statistics about the the best tennis players ever"
           />
           <Project
             name="Cultural Roadmap"
             url="https://culturalroadmap.vercel.app"
-            date="20 November 2023"
+            date="September 2023"
             description="Interactive guides for classical music, books and films - curated by me"
           />
         </div>
