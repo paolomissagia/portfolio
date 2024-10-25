@@ -50,7 +50,7 @@ export default function Home() {
             <a href="mailto:hello@paolomissagia.com">
               <FiMail size={"1.3em"} className="text-secondary" />
             </a>
-            <a href="https://leetcode.com/u/pmissagia">
+            <a href="https://leetcode.com/u/paolomissagia">
               <SiLeetcode size={"1.3em"} className="text-secondary" />
             </a>
           </div>
