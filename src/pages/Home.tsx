@@ -28,17 +28,6 @@ export default function Home() {
             </span>{" "}
             below
           </h2>
-          <h2>
-            View my{" "}
-            <a
-              href="/CV.pdf"
-              target="_blank"
-              className="text-secondary underline"
-            >
-              CV
-            </a>{" "}
-            for detailed professional information
-          </h2>
           <h2>Reach me out for a chat</h2>
           <div className="flex flex-row gap-3">
             <a href="https://linkedin.com/in/paolomissagia" target="_blank">
