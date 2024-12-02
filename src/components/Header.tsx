@@ -6,7 +6,7 @@ export default function Header() {
       pmissagia:~$
       <ReactTyped
         className="text-secondary"
-        strings={["cd", "git", "sudo", "docker", "vim", "ls"]}
+        strings={["cd", "git", "sudo", "docker", "vim", "ls", "tmux"]}
         typeSpeed={120}
         backSpeed={120}
         loop
