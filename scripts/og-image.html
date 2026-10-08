@@ -1,0 +1,88 @@
+<!--
+  Source for public/og.png (1200x630 link-preview image). Regenerate with:
+  google-chrome --headless=new --hide-scrollbars --window-size=1200,630 \
+    --virtual-time-budget=5000 --screenshot=public/og.png scripts/og-image.html
+-->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;1,400&display=block"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1200px;
+        height: 630px;
+      }
+      body {
+        background: #222436;
+        color: #c8d3f5;
+        font-family: "JetBrains Mono", monospace;
+        padding: 72px 96px;
+        display: flex;
+        flex-direction: column;
+      }
+      .prompt {
+        font-size: 32px;
+      }
+      .prompt b {
+        color: #c3e88d;
+        font-weight: 400;
+      }
+      .cursor {
+        display: inline-block;
+        width: 3px;
+        height: 34px;
+        background: #c3e88d;
+        vertical-align: -6px;
+        margin-left: 4px;
+      }
+      hr {
+        border: 0;
+        border-top: 2px solid #ff757f;
+        margin: 40px 0 64px;
+      }
+      h1 {
+        font-size: 88px;
+        font-weight: 600;
+        letter-spacing: -1px;
+      }
+      .role {
+        font-size: 40px;
+        margin-top: 24px;
+      }
+      .dash {
+        margin-top: auto;
+        height: 3px;
+        width: 100%;
+        background: repeating-linear-gradient(
+          90deg,
+          #ff757f 0 24px,
+          transparent 24px 60px
+        );
+      }
+      .url {
+        margin-top: 28px;
+        font-size: 30px;
+        color: #c3e88d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="prompt">
+      pmissagia:~$ <b>whoami</b><span class="cursor"></span>
+    </div>
+    <hr />
+    <h1>Paolo Missagia</h1>
+    <div class="role">Full Stack Developer</div>
+    <div class="dash"></div>
+    <div class="url">paolomissagia.com</div>
+  </body>
+</html>
