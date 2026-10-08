@@ -18,3 +18,21 @@ jobs:
       - run: npm run lint
       - run: npm run format:check
       - run: npm run build
+
+  # Merge Dependabot minor/patch PRs once the checks above pass.
+  # Major updates are left open for manual review.
+  dependabot-automerge:
+    needs: check
+    if: github.event_name == 'pull_request' && github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - id: meta
+        uses: dependabot/fetch-metadata@v2
+      - if: steps.meta.outputs.update-type != 'version-update:semver-major'
+        run: gh pr merge --squash "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
