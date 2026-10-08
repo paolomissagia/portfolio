@@ -19,8 +19,9 @@ jobs:
       - run: npm run format:check
       - run: npm run build
 
-  # Merge Dependabot minor/patch PRs once the checks above pass.
-  # Major updates are left open for manual review.
+  # Merge Dependabot PRs once the checks above pass. npm major updates are
+  # left open for manual review; GitHub Actions majors are safe to merge
+  # because this workflow exercises them before the merge step runs.
   dependabot-automerge:
     needs: check
     if: github.event_name == 'pull_request' && github.actor == 'dependabot[bot]'
@@ -31,7 +32,9 @@ jobs:
     steps:
       - id: meta
         uses: dependabot/fetch-metadata@v2
-      - if: steps.meta.outputs.update-type != 'version-update:semver-major'
+      - if: >-
+          steps.meta.outputs.update-type != 'version-update:semver-major' ||
+          steps.meta.outputs.package-ecosystem == 'github_actions'
         run: gh pr merge --squash "$PR_URL"
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
