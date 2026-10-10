@@ -43,7 +43,6 @@ export function Home() {
               <div>
                 <h3>{role.org}</h3>
                 <p className="role">{role.title}</p>
-                {role.summary && <p>{role.summary}</p>}
               </div>
             </li>
           ))}
