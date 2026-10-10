@@ -1,6 +1,6 @@
 # Paolo Missagia brand
 
-**Personality: an Italian craftsman with a modern workshop.** A software developer who builds carefully and by hand, and who now works alongside AI agents the way a master works with apprentices: they do more of the cutting, he decides what gets made and checks every joint. The look is classic and quiet, like a well-set Italian book; the modern feeling comes from the tools on the bench, not from decoration. The words are calm, precise and warm.
+**Personality: an Italian craftsman with a modern workshop.** A software developer who crafts software with AI. Agents are part of the workshop the way apprentices are part of a *bottega*: they do much of the cutting, he sets the design and the standard, and checks every joint. The craft and the AI are one story, never a contrast: he is not a hand-coder tolerating AI, nor an AI enthusiast skipping the craft. The look is classic and quiet, like a well-set Italian book; the modern feeling comes from the tools on the bench, not from decoration. The words are calm, precise and warm.
 
 The site is a *bottega*, a workshop: the place you find Paolo when you search for him, see what he has made, learn how he makes it, and get in touch.
 
@@ -26,7 +26,11 @@ First person, British English (he lives in Edinburgh), short sentences.
 | Mention Italy and Edinburgh as plain facts, with warmth | Clichés: pizza, mandolins, "la dolce vita", tartan |
 | Talk about interests with the same care as the work: opera, classical music, cycling | Generic hobbies to fill space ("I love travelling and coffee") |
 
-Taglines: *Software, made by hand. With good tools.* · *Built with care in Edinburgh.*
+Taglines: *Software, crafted with AI.* · *Crafted in Edinburgh, built with AI.*
+
+Hero line: *Full stack developer in Edinburgh, crafting software with AI.*
+
+**Craft and AI go together.** Never "made by hand", "handwritten" or "no AI", which read as anti-AI; never "AI-generated" or "built by AI", which erase the craft. Say *crafted with AI*, *built with agents*, *with Claude Code*: the person is the subject, the AI is the tool.
 
 ### Content rules
 
@@ -94,8 +98,9 @@ The pairing is the brand in miniature: an eighteenth-century Italian serif for t
 
 ## Signature elements
 
-- **The hero as a title page.** Name in large Bodoni, one line on what he does, one line on where he is, set on generous paper with nothing else competing. A vermilion text cursor blinks after the last line, a nod to the terminal the old site was built around (static with reduced motion).
+- **The hero as a title page.** Name in large Bodoni, one line on what he does and where ("crafting software with AI"), set on generous paper with nothing else competing. A vermilion text cursor blinks after the last line, a nod to the terminal the old site was built around (static with reduced motion).
 - **Margin notes.** On wide screens, short mono annotations sit in the left margin beside the text they belong to, like a scholar's notes in an old book or a log from the tools: `built with Claude Code`, `43 commits · 2 days`, `Edinburgh, 55.95° N`. On narrow screens they drop above their paragraph. This is where the agentic work lives visually: quiet, factual, always there.
+- **The method in three steps** under *Metodo*: **Brief** (a brand and a spec before any code), **Build** (agents write much of the code, he steers), **Check** (he reviews every change; tests and sources keep it honest). Numbered because it is a real sequence.
 - **Workshop cards for projects.** Each project is a card with its name in Bodoni, one sentence on what it does, a mono build log (stack, how it was built, time taken), and a link. Each card may show a small swatch of that project's own palette, a craftsman showing different pieces from the same bench.
 - **Hairline rules** in Linea between sections, and a short vermilion rule under each eyebrow.
 - **Roman numerals** number the sections (I. Lavori, II. Metodo, …), a quiet echo of Sonatina's movement lists.
