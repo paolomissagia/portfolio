@@ -6,11 +6,19 @@ describe('projects', () => {
     expect(new Set(projects.map((p) => p.name)).size).toBe(projects.length)
   })
 
-  it('link to live HTTPS sites', () => {
-    for (const p of projects) expect(new URL(p.url).protocol).toBe('https:')
+  it('link to live HTTPS sites, labelled with their address', () => {
+    for (const p of projects) {
+      const url = new URL(p.url)
+      expect(url.protocol).toBe('https:')
+      expect(url.hostname.replace(/^www\./, '')).toBe(p.label)
+    }
   })
 
-  it('have a description', () => {
-    for (const p of projects) expect(p.description.trim()).not.toBe('')
+  it('have a description, a build log and a palette of hex colours', () => {
+    for (const p of projects) {
+      expect(p.description.trim()).not.toBe('')
+      expect(p.log.length).toBeGreaterThan(0)
+      for (const colour of p.palette) expect(colour).toMatch(/^#[0-9a-f]{6}$/)
+    }
   })
 })

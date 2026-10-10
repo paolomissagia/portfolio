@@ -1,11 +1,22 @@
 export function NotFound() {
   return (
-    <section className="not-found">
-      <h1>404</h1>
-      <p>bash: this page: No such file or directory</p>
-      <p>
-        <a href="/">cd ~</a>
-      </p>
+    <section className="hero" aria-labelledby="title">
+      <div className="row">
+        <p className="note">
+          404
+          <br />
+          no such page
+        </p>
+        <div className="hero-body">
+          <h1 id="title">
+            Page <em>not found</em>
+          </h1>
+          <p className="hero-line">This page doesn’t exist, or it has moved.</p>
+          <p>
+            <a href="/">Back to the home page</a>
+          </p>
+        </div>
+      </div>
     </section>
   )
 }

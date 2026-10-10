@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;1,400&display=block"
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Geist:wght@400&family=Geist+Mono&display=block"
       rel="stylesheet"
     />
     <style>
@@ -22,67 +22,61 @@
         height: 630px;
       }
       body {
-        background: #222436;
-        color: #c8d3f5;
-        font-family: "JetBrains Mono", monospace;
-        padding: 72px 96px;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        padding: 64px 88px;
+        background: #f8f4ec;
+        color: #1b1a17;
+        font-family: 'Geist', sans-serif;
       }
-      .prompt {
-        font-size: 32px;
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e4dccd;
       }
-      .prompt b {
-        color: #c3e88d;
-        font-weight: 400;
+      .mark {
+        font: 600 44px/1 'Bodoni Moda', serif;
+      }
+      .mono {
+        font: 22px/1.4 'Geist Mono', monospace;
+        color: #5c574f;
+      }
+      .red {
+        color: #b5321c;
+      }
+      h1 {
+        font: 400 136px/0.95 'Bodoni Moda', serif;
+        letter-spacing: -0.035em;
+      }
+      h1 em {
+        font-style: italic;
+      }
+      p {
+        margin-top: 28px;
+        font-size: 36px;
+        line-height: 1.35;
       }
       .cursor {
         display: inline-block;
-        width: 3px;
-        height: 34px;
-        background: #c3e88d;
-        vertical-align: -6px;
-        margin-left: 4px;
-      }
-      hr {
-        border: 0;
-        border-top: 2px solid #ff757f;
-        margin: 40px 0 64px;
-      }
-      h1 {
-        font-size: 88px;
-        font-weight: 600;
-        letter-spacing: -1px;
-      }
-      .role {
-        font-size: 40px;
-        margin-top: 24px;
-      }
-      .dash {
-        margin-top: auto;
+        width: 20px;
         height: 3px;
-        width: 100%;
-        background: repeating-linear-gradient(
-          90deg,
-          #ff757f 0 24px,
-          transparent 24px 60px
-        );
-      }
-      .url {
-        margin-top: 28px;
-        font-size: 30px;
-        color: #c3e88d;
+        margin-left: 6px;
+        background: #b5321c;
       }
     </style>
   </head>
   <body>
-    <div class="prompt">
-      pmissagia:~$ <b>whoami</b><span class="cursor"></span>
+    <div class="top">
+      <span class="mark">PM<span class="red">.</span></span>
+      <span class="mono">paolomissagia.com</span>
     </div>
-    <hr />
-    <h1>Paolo Missagia</h1>
-    <div class="role">Full Stack Developer</div>
-    <div class="dash"></div>
-    <div class="url">paolomissagia.com</div>
+    <div>
+      <h1>Paolo <em>Missagia</em></h1>
+      <p>Full stack developer in Edinburgh, crafting software with AI<span class="cursor"></span></p>
+    </div>
+    <span class="mono">Edinburgh · 55.95° N, 3.19° W</span>
   </body>
 </html>
