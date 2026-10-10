@@ -125,7 +125,7 @@ Each gets a sentence or two under *Fuori orario*, linked to the project it inspi
 From Paolo, his CV and his public LinkedIn profile. The site never claims more than this.
 
 - Born in **Italy**, based in **Edinburgh, Scotland, UK**
-- **Full Stack Developer, MAPAL Group**, Feb 2024 – present (remote; the company is in Dresden). Angular and Python (Django) on a learning platform with 500,000+ monthly users; LLM-powered chatbot features across several products; 50+ REST endpoints; reviews, mentoring, tests, releases.
+- **Full Stack Developer, MAPAL Group**, Feb 2024 – present, working from Edinburgh. Angular and Python (Django) on a learning platform with 500,000+ monthly users; LLM-powered chatbot features across several products; 50+ REST endpoints; reviews, mentoring, tests, releases.
 - **Software Engineer, Computershare**, Edinburgh, Sep 2022 – Feb 2024. React and Java (Spring Boot) on a client platform for 45,000+ companies; migration from on-premises to Azure with Docker and Kubernetes.
 - **BSc (Hons) Computing & IT, The Open University**, 2019–2022
 - Professional developer since 2022: say "four years" only while it is true, or better, let the dates speak.
