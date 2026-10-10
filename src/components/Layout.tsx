@@ -30,7 +30,8 @@ export function Layout({ children }: { children: ReactNode }) {
       <main>{children}</main>
 
       <footer className="colophon">
-        <span>© {YEAR} Paolo Missagia</span>
+        {/* The year is baked in at build time; the browser may disagree for a moment at New Year. */}
+        <span suppressHydrationWarning>© {YEAR} Paolo Missagia</span>
       </footer>
     </div>
   )
