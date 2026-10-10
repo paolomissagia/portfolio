@@ -20,7 +20,7 @@ export const experience: Role[] = [
   },
   {
     org: 'The Open University',
-    title: 'BSc (Hons) Computing & IT',
+    title: 'Computer Science',
     start: 2019,
     end: 2022,
   },
