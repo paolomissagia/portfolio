@@ -412,18 +412,6 @@ p {
   }
 }
 
-/* Interests */
-
-.pair {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 1.5rem;
-}
-
-.pair h3 {
-  margin-bottom: 0.35rem;
-}
-
 /* Contact */
 
 .contact-links {

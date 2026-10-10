@@ -28,8 +28,8 @@ npm run preview   # serve the production build locally
 
 ## Layout
 
-- `src/pages/Home.tsx`: the main page, one `Section` per part (work, method,
-  experience, interests, contact)
+- `src/pages/Home.tsx`: the main page, one `Section` per part (experience,
+  projects, method, contact)
 - `src/data/`: projects, experience and contact links; content changes go here
 - `src/pages/NotFound.tsx`: rendered into `404.html`, which Vercel serves for
   unknown paths

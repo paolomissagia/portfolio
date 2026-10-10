@@ -85,41 +85,7 @@ export function Home() {
         </ol>
       </Section>
 
-      <Section
-        id="interests"
-        numeral="IV"
-        eyebrow="Fuori orario"
-        title="Off the clock"
-        note={
-          <>
-            where the
-            <br />
-            projects come from
-          </>
-        }
-      >
-        <div className="pair">
-          <div>
-            <h3>Opera and classical music</h3>
-            <p>
-              From Monteverdi to Puccini. The reason <a href="https://www.sonatina.eu" target="_blank" rel="noopener noreferrer">
-                Sonatina
-              </a> exists.
-            </p>
-          </div>
-          <div>
-            <h3>Cycling</h3>
-            <p>
-              Road bikes and the numbers behind a good fit. The reason{' '}
-              <a href="https://biketoride.vercel.app" target="_blank" rel="noopener noreferrer">
-                biketoride
-              </a> exists.
-            </p>
-          </div>
-        </div>
-      </Section>
-
-      <Section id="contact" numeral="V" eyebrow="Contatti" title="Get in touch" note="email first">
+      <Section id="contact" numeral="IV" eyebrow="Contatti" title="Get in touch" note="email first">
         <p>The best way to reach me is by email.</p>
         <ul className="contact-links">
           <li>

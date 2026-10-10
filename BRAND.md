@@ -24,7 +24,7 @@ First person, British English, short sentences.
 | Be concrete about agentic work: what the agent did, what he decided, how it was checked. "biketoride was built with AI agents in two days; every geometry figure is sourced and tested." | Vague AI claims: "AI-powered", "leveraging cutting-edge LLMs", "the future of coding" |
 | Show the work and let it speak: a project, what it does, how it was built | Lists of buzzwords or skill bars ("React ████████░░") |
 | Mention Italy as a plain fact, with warmth | Clichés: pizza, mandolins, "la dolce vita" |
-| Talk about interests with the same care as the work: opera, classical music, cycling | Generic hobbies to fill space ("I love travelling and coffee") |
+| Let the projects show the interests: Sonatina says opera and classical music, biketoride says cycling | A hobbies section, or generic hobbies to fill space ("I love travelling and coffee") |
 
 Taglines: *Software, crafted with AI.* · *Italian craft, built with AI.*
 
@@ -55,7 +55,6 @@ Italy is part of the identity, not a theme. Use it sparingly and with taste:
   | *Percorso* | Experience |
   | *Progetti* | Projects |
   | *Metodo* | How I build |
-  | *Fuori orario* | Off the clock |
   | *Contatti* | Get in touch |
 
   In that order: experience first, so a visitor sees the career before the side projects.
@@ -124,12 +123,7 @@ Almost none. Links underline on hover, the cursor blinks, and sections may fade 
 
 ## Interests
 
-Two, because both shaped the work:
-
-- **Opera and classical music**, the reason Sonatina exists.
-- **Cycling**, the reason biketoride exists.
-
-Each gets a sentence or two under *Fuori orario*, linked to the project it inspired.
+Opera and classical music, and cycling, are real and they shaped the work, but they have no section of their own. The projects already say it: Sonatina is the opera and classical music, biketoride is the cycling. Don't add a hobbies section.
 
 ## Facts we use
 
