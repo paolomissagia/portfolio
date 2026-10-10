@@ -18,7 +18,7 @@ export function Home() {
           <p className="note">
             building software
             <br />
-            since 2022
+            for a better world
           </p>
           <div className="hero-body">
             <h1 id="name">
@@ -33,7 +33,7 @@ export function Home() {
         </div>
       </section>
 
-      <Section id="experience" numeral="I" eyebrow="Percorso" title="Experience" note="most recent first">
+      <Section id="experience" numeral="I" eyebrow="Percorso" title="Experience">
         <ol className="timeline">
           {experience.map((role) => (
             <li key={role.org}>
@@ -55,13 +55,6 @@ export function Home() {
         numeral="II"
         eyebrow="Progetti"
         title="Projects"
-        note={
-          <>
-            two pieces
-            <br />
-            from the bench
-          </>
-        }
       >
         <div className="cards">
           {projects.map((project) => (
@@ -70,7 +63,7 @@ export function Home() {
         </div>
       </Section>
 
-      <Section id="method" numeral="III" eyebrow="Metodo" title="How I build" note="craft + AI">
+      <Section id="method" numeral="III" eyebrow="Metodo" title="How I build">
         <p>
           At work I build LLM-powered features into products used by hundreds of thousands of people. On my own
           projects, AI agents are part of the workshop, and every project goes through the same three steps.
@@ -85,11 +78,11 @@ export function Home() {
         </ol>
       </Section>
 
-      <Section id="contact" numeral="IV" eyebrow="Contatti" title="Get in touch" note="email first">
+      <Section id="contact" numeral="IV" eyebrow="Contatti" title="Get in touch">
         <p>The best way to reach me is by email.</p>
         <ul className="contact-links">
           <li>
-            <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+            <a href={`mailto:${EMAIL}`}>Email</a>
           </li>
           {links.map(({ label, href }) => (
             <li key={label}>

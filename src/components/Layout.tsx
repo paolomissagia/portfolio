@@ -31,7 +31,7 @@ export function Layout({ children }: { children: ReactNode }) {
 
       <footer className="colophon">
         <span>© {YEAR} Paolo Missagia</span>
-        <span>Crafted with AI</span>
+        <span>Handcrafted with AI</span>
       </footer>
     </div>
   )

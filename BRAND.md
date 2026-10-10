@@ -26,11 +26,11 @@ First person, British English, short sentences.
 | Mention Italy as a plain fact, with warmth | Clichés: pizza, mandolins, "la dolce vita" |
 | Let the projects show the interests: Sonatina says opera and classical music, biketoride says cycling | A hobbies section, or generic hobbies to fill space ("I love travelling and coffee") |
 
-Taglines: *Software, crafted with AI.* · *Italian craft, built with AI.*
+Taglines: ***Handcrafted with AI.*** (the signature, in the footer) · *Software, crafted with AI.* · *Italian craft, built with AI.*
 
 Hero line: *Full stack developer, crafting software with AI.*
 
-**Craft and AI go together.** Never "made by hand", "handwritten" or "no AI", which read as anti-AI; never "AI-generated" or "built by AI", which erase the craft. Say *crafted with AI*, *built with AI agents*: the person is the subject, the AI is the tool.
+**Craft and AI go together.** Never "made by hand", "handwritten" or "no AI" on their own, which read as anti-AI; *handcrafted* always travels with *with AI*; never "AI-generated" or "built by AI", which erase the craft. Say *handcrafted with AI*, *crafted with AI*, *built with AI agents*: the person is the subject, the AI is the tool.
 
 **Name the practice, not the product.** The site says AI and agents, never a specific tool or vendor: the craft is working with AI, whichever tools that means this year.
 
@@ -104,7 +104,7 @@ The pairing is the brand in miniature: an eighteenth-century Italian serif for t
 ## Signature elements
 
 - **The hero as a title page.** Name in large Bodoni, one line on what he does ("Full stack developer, crafting software with AI"), set on generous paper with nothing else competing. A vermilion text cursor blinks after the last line, a nod to the terminal the old site was built around (static with reduced motion).
-- **Margin notes.** On wide screens, short mono annotations sit in the left margin beside the text they belong to, like a scholar's notes in an old book or a log from the tools: `built with AI agents`, `first version in two days`, `since 2022`. On narrow screens they drop above their paragraph. This is where the agentic work lives visually: quiet, factual, always there.
+- **Margin notes.** On wide screens, short mono annotations sit in the left margin beside the text they belong to, like a scholar's notes in an old book or a log from the tools: `built with AI agents`, `first version in two days`, `building software for a better world`. On narrow screens they drop above their paragraph. This is where the agentic work lives visually: quiet, factual, always there.
 - **The method in three steps** under *Metodo*: **Brief** (a brand and a spec before any code), **Build** (agents write much of the code, he steers), **Check** (he reviews every change; tests and sources keep it honest). Numbered because it is a real sequence.
 - **Workshop cards for projects.** Each project is a card with its name in Bodoni, one sentence on what it does, a mono build log (stack, how it was built, time taken), and a link. Each card may show a small swatch of that project's own palette, a craftsman showing different pieces from the same bench.
 - **Hairline rules** in Linea between sections, and a short vermilion rule under each eyebrow.
