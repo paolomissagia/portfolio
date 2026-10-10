@@ -14,10 +14,10 @@ describe('projects', () => {
     }
   })
 
-  it('have a description, a build log and a palette of hex colours', () => {
+  it('have a description and a two-colour palette of hex colours', () => {
     for (const p of projects) {
       expect(p.description.trim()).not.toBe('')
-      expect(p.log.length).toBeGreaterThan(0)
+      expect(p.palette).toHaveLength(2)
       for (const colour of p.palette) expect(colour).toMatch(/^#[0-9a-f]{6}$/)
     }
   })

@@ -1,6 +1,6 @@
 import type { ProjectData } from '../data/projects'
 
-export function WorkCard({ name, url, label, description, log, palette }: ProjectData) {
+export function WorkCard({ name, url, label, description, palette }: ProjectData) {
   return (
     <article className="card">
       <div className="card-top">
@@ -13,11 +13,6 @@ export function WorkCard({ name, url, label, description, log, palette }: Projec
         </span>
       </div>
       <p>{description}</p>
-      <p className="log">
-        {log.map((line) => (
-          <span key={line}>{line}</span>
-        ))}
-      </p>
       <a href={url} target="_blank" rel="noopener noreferrer">
         {label}
       </a>

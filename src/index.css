@@ -320,17 +320,9 @@ p {
   box-shadow: 0 0 0 2px var(--surface);
 }
 
-.log {
-  display: flex;
-  flex-direction: column;
-  margin-top: auto;
-  padding-top: 0.7rem;
-  border-top: 1px dashed var(--rule);
-  color: var(--muted);
-  font: 400 0.78rem/1.6 var(--font-mono);
-}
-
 .card a {
+  margin-top: auto;
+  padding-top: 0.25rem;
   font-size: 0.95rem;
   font-weight: 500;
 }

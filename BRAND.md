@@ -97,16 +97,16 @@ Three families, each with one job, all self-hosted via Fontsource:
 
 - **Display: Bodoni Moda** (`--font-display`, `@fontsource-variable/bodoni-moda`). Headings, the name, the monogram. Large (32 px and up), tight tracking, regular or italic weight. The key word of a headline can be italic. Never for body text or below 24 px: Bodoni's hairlines vanish when small.
 - **Body: Geist** (`--font-body`, `@fontsource-variable/geist`). Running text and UI, 400 for reading, 500–600 for labels. Shared with Sonatina.
-- **Mono: Geist Mono** (`--font-mono`, `@fontsource-variable/geist-mono`). The voice of the tools: margin notes, build logs, the domain, code, dates. Small (13–14 px), in Grafite.
+- **Mono: Geist Mono** (`--font-mono`, `@fontsource-variable/geist-mono`). The voice of the tools: margin notes, the nav, the footer, dates. Small (13–14 px), in Grafite.
 
 The pairing is the brand in miniature: an eighteenth-century Italian serif for the craft, a contemporary sans for clarity, and a mono for the workshop's machines.
 
 ## Signature elements
 
 - **The hero as a title page.** Name in large Bodoni, one line on what he does ("Full stack developer, crafting software with AI"), set on generous paper with nothing else competing. A vermilion text cursor blinks after the last line, a nod to the terminal the old site was built around (static with reduced motion).
-- **Margin notes.** On wide screens, short mono annotations sit in the left margin beside the text they belong to, like a scholar's notes in an old book or a log from the tools: `built with AI agents`, `first version in two days`, `building software for a better world`. On narrow screens they drop above their paragraph. This is where the agentic work lives visually: quiet, factual, always there.
+- **Margin notes.** On wide screens, short mono annotations sit in the left margin beside the text they belong to, like a scholar's notes in an old book or a log from the tools: `building software for a better world`. Use them sparingly: one in the hero is enough. On narrow screens they drop above their paragraph. This is where the agentic work lives visually: quiet, factual, always there.
 - **The method in three steps** under *Metodo*: **Brief** (a brand and a spec before any code), **Build** (agents write much of the code, he steers), **Check** (he reviews every change; tests and sources keep it honest). Numbered because it is a real sequence.
-- **Workshop cards for projects.** Each project is a card with its name in Bodoni, one sentence on what it does, a mono build log (stack, how it was built, time taken), and a link. Each card may show a small swatch of that project's own palette, a craftsman showing different pieces from the same bench.
+- **Workshop cards for projects.** Each project is a card with its name in Bodoni, one sentence on what it does, and a link. No stack or build details. Each card shows a swatch of exactly two of that project's own colours (its dark, then its accent), a craftsman showing different pieces from the same bench.
 - **Hairline rules** in Linea between sections, and a short vermilion rule under each eyebrow.
 - **Roman numerals** number the sections (I. Percorso, II. Progetti, …), a quiet echo of Sonatina's movement lists.
 - **One column, wide margins.** A single reading column of about 65 characters, with the margin notes outside it. No sidebars, no carousels, no parallax.
