@@ -3,9 +3,9 @@ import type { ReactNode } from 'react'
 const YEAR = new Date().getFullYear()
 
 const nav = [
-  { label: 'Work', href: '/#work' },
-  { label: 'Method', href: '/#method' },
   { label: 'Experience', href: '/#experience' },
+  { label: 'Projects', href: '/#projects' },
+  { label: 'Method', href: '/#method' },
   { label: 'Contact', href: '/#contact' },
 ]
 
@@ -30,10 +30,8 @@ export function Layout({ children }: { children: ReactNode }) {
       <main>{children}</main>
 
       <footer className="colophon">
-        <span>
-          © {YEAR} Paolo Missagia · Edinburgh
-        </span>
-        <span>Crafted with Claude Code</span>
+        <span>© {YEAR} Paolo Missagia</span>
+        <span>Crafted with AI</span>
       </footer>
     </div>
   )

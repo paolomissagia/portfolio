@@ -198,7 +198,8 @@ p {
 }
 
 .hero-line {
-  max-width: 30ch;
+  max-width: 34ch;
+  text-wrap: balance;
   font-size: 1.3rem;
   line-height: 1.45;
 }

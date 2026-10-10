@@ -28,4 +28,11 @@ describe('brand rules', () => {
   it.each(sources.filter((f) => f !== 'BRAND.md'))('%s keeps craft and AI together', (file) => {
     expect(readFileSync(join(root, file), 'utf8').toLowerCase()).not.toContain(byHand)
   })
+
+  // The site names the practice, not the product, and no home city (BRAND.md).
+  const site = sources.filter((f) => !f.endsWith('.md') && !f.startsWith('test/'))
+
+  it.each(site)('%s names no AI product or home city', (file) => {
+    expect(readFileSync(join(root, file), 'utf8')).not.toMatch(/claude|edinburgh/i)
+  })
 })

@@ -16,21 +16,25 @@ People searching for Paolo by name: recruiters, hiring managers, potential colla
 
 ## Voice
 
-First person, British English (he lives in Edinburgh), short sentences.
+First person, British English, short sentences.
 
 | Do | Don't |
 | --- | --- |
 | Say plainly what he does: "I build web applications, mostly in TypeScript and React." | Titles and hype: "rockstar", "ninja", "10x", "passionate about clean code" |
-| Be concrete about agentic work: what the agent did, what he decided, how it was checked. "biketoride was built with Claude Code in two days; every geometry figure is sourced and tested." | Vague AI claims: "AI-powered", "leveraging cutting-edge LLMs", "the future of coding" |
+| Be concrete about agentic work: what the agent did, what he decided, how it was checked. "biketoride was built with AI agents in two days; every geometry figure is sourced and tested." | Vague AI claims: "AI-powered", "leveraging cutting-edge LLMs", "the future of coding" |
 | Show the work and let it speak: a project, what it does, how it was built | Lists of buzzwords or skill bars ("React ████████░░") |
-| Mention Italy and Edinburgh as plain facts, with warmth | Clichés: pizza, mandolins, "la dolce vita", tartan |
+| Mention Italy as a plain fact, with warmth | Clichés: pizza, mandolins, "la dolce vita" |
 | Talk about interests with the same care as the work: opera, classical music, cycling | Generic hobbies to fill space ("I love travelling and coffee") |
 
-Taglines: *Software, crafted with AI.* · *Crafted in Edinburgh, built with AI.*
+Taglines: *Software, crafted with AI.* · *Italian craft, built with AI.*
 
-Hero line: *Full stack developer in Edinburgh, crafting software with AI.*
+Hero line: *Full stack developer, crafting software with AI.*
 
-**Craft and AI go together.** Never "made by hand", "handwritten" or "no AI", which read as anti-AI; never "AI-generated" or "built by AI", which erase the craft. Say *crafted with AI*, *built with agents*, *with Claude Code*: the person is the subject, the AI is the tool.
+**Craft and AI go together.** Never "made by hand", "handwritten" or "no AI", which read as anti-AI; never "AI-generated" or "built by AI", which erase the craft. Say *crafted with AI*, *built with AI agents*: the person is the subject, the AI is the tool.
+
+**Name the practice, not the product.** The site says AI and agents, never a specific tool or vendor: the craft is working with AI, whichever tools that means this year.
+
+**No home city.** Location is not part of the brand and may change. The site names no city; Italy is where he comes from, not where he lives.
 
 ### Content rules
 
@@ -48,11 +52,13 @@ Italy is part of the identity, not a theme. Use it sparingly and with taste:
 
   | Eyebrow | Heading |
   | --- | --- |
-  | *Lavori* | Selected work |
-  | *Metodo* | How I build |
   | *Percorso* | Experience |
+  | *Progetti* | Projects |
+  | *Metodo* | How I build |
   | *Fuori orario* | Off the clock |
   | *Contatti* | Get in touch |
+
+  In that order: experience first, so a visitor sees the career before the side projects.
 
 - **Colour names** in this file are Italian (Carta, Inchiostro, Vermiglio): the tokens in CSS use them too.
 - **Typography from Parma:** headings are set in Bodoni, the typeface of Giambattista Bodoni, printer to the Duke of Parma.
@@ -98,12 +104,12 @@ The pairing is the brand in miniature: an eighteenth-century Italian serif for t
 
 ## Signature elements
 
-- **The hero as a title page.** Name in large Bodoni, one line on what he does and where ("crafting software with AI"), set on generous paper with nothing else competing. A vermilion text cursor blinks after the last line, a nod to the terminal the old site was built around (static with reduced motion).
-- **Margin notes.** On wide screens, short mono annotations sit in the left margin beside the text they belong to, like a scholar's notes in an old book or a log from the tools: `built with Claude Code`, `43 commits · 2 days`, `Edinburgh, 55.95° N`. On narrow screens they drop above their paragraph. This is where the agentic work lives visually: quiet, factual, always there.
+- **The hero as a title page.** Name in large Bodoni, one line on what he does ("Full stack developer, crafting software with AI"), set on generous paper with nothing else competing. A vermilion text cursor blinks after the last line, a nod to the terminal the old site was built around (static with reduced motion).
+- **Margin notes.** On wide screens, short mono annotations sit in the left margin beside the text they belong to, like a scholar's notes in an old book or a log from the tools: `built with AI agents`, `first version in two days`, `born in Italy`. On narrow screens they drop above their paragraph. This is where the agentic work lives visually: quiet, factual, always there.
 - **The method in three steps** under *Metodo*: **Brief** (a brand and a spec before any code), **Build** (agents write much of the code, he steers), **Check** (he reviews every change; tests and sources keep it honest). Numbered because it is a real sequence.
 - **Workshop cards for projects.** Each project is a card with its name in Bodoni, one sentence on what it does, a mono build log (stack, how it was built, time taken), and a link. Each card may show a small swatch of that project's own palette, a craftsman showing different pieces from the same bench.
 - **Hairline rules** in Linea between sections, and a short vermilion rule under each eyebrow.
-- **Roman numerals** number the sections (I. Lavori, II. Metodo, …), a quiet echo of Sonatina's movement lists.
+- **Roman numerals** number the sections (I. Percorso, II. Progetti, …), a quiet echo of Sonatina's movement lists.
 - **One column, wide margins.** A single reading column of about 65 characters, with the margin notes outside it. No sidebars, no carousels, no parallax.
 
 ## Motion
@@ -129,9 +135,9 @@ Each gets a sentence or two under *Fuori orario*, linked to the project it inspi
 
 From Paolo, his CV and his public LinkedIn profile. The site never claims more than this.
 
-- Born in **Italy**, based in **Edinburgh, Scotland, UK**
-- **Full Stack Developer, MAPAL Group**, Feb 2024 – present, working from Edinburgh. Angular and Python (Django) on a learning platform with 500,000+ monthly users; LLM-powered chatbot features across several products; 50+ REST endpoints; reviews, mentoring, tests, releases.
-- **Software Engineer, Computershare**, Edinburgh, Sep 2022 – Feb 2024. React and Java (Spring Boot) on a client platform for 45,000+ companies; migration from on-premises to Azure with Docker and Kubernetes.
+- Born in **Italy**. The site names no home city (see *No home city*).
+- **Full Stack Developer, MAPAL Group**, Feb 2024 – present. Angular and Python (Django) on a learning platform with 500,000+ monthly users; LLM-powered chatbot features across several products; 50+ REST endpoints; reviews, mentoring, tests, releases.
+- **Software Engineer, Computershare**, Sep 2022 – Feb 2024. React and Java (Spring Boot) on a client platform for 45,000+ companies; migration from on-premises to Azure with Docker and Kubernetes.
 - **BSc (Hons) Computing & IT, The Open University**, 2019–2022
 - Professional developer since 2022: say "four years" only while it is true, or better, let the dates speak.
 - Languages: Italian (native), English (fluent), German (A2)

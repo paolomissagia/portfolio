@@ -6,7 +6,7 @@ import { projects } from '../data/projects'
 
 const steps = [
   { name: 'Brief', text: 'A brand and a spec before any code: who it is for, how it sounds, what it must get right.' },
-  { name: 'Build', text: 'Agents, mostly Claude Code, write much of the code while I steer the design and the trade-offs.' },
+  { name: 'Build', text: 'AI agents write much of the code while I steer the design and the trade-offs.' },
   { name: 'Check', text: 'I review every change. Tests, sourced facts and a clean build keep the work honest.' },
 ]
 
@@ -16,16 +16,16 @@ export function Home() {
       <section className="hero" aria-labelledby="name">
         <div className="row">
           <p className="note">
-            Edinburgh
+            born in Italy
             <br />
-            55.95° N, 3.19° W
+            building since 2022
           </p>
           <div className="hero-body">
             <h1 id="name">
               Paolo <em>Missagia</em>
             </h1>
             <p className="hero-line">
-              Full stack developer in Edinburgh, crafting software with AI
+              Full stack developer, crafting software with AI
               <span className="cursor" aria-hidden="true" />
             </p>
             <p className="hero-sub">Currently at MAPAL Group.</p>
@@ -33,11 +33,28 @@ export function Home() {
         </div>
       </section>
 
+      <Section id="experience" numeral="I" eyebrow="Percorso" title="Experience" note="most recent first">
+        <ol className="timeline">
+          {experience.map((role) => (
+            <li key={role.org}>
+              <span className="when">
+                {role.start}–{role.end ?? 'now'}
+              </span>
+              <div>
+                <h3>{role.org}</h3>
+                <p className="role">{role.title}</p>
+                {role.summary && <p>{role.summary}</p>}
+              </div>
+            </li>
+          ))}
+        </ol>
+      </Section>
+
       <Section
-        id="work"
-        numeral="I"
-        eyebrow="Lavori"
-        title="Selected work"
+        id="projects"
+        numeral="II"
+        eyebrow="Progetti"
+        title="Projects"
         note={
           <>
             two pieces
@@ -53,7 +70,7 @@ export function Home() {
         </div>
       </Section>
 
-      <Section id="method" numeral="II" eyebrow="Metodo" title="How I build" note="craft + AI">
+      <Section id="method" numeral="III" eyebrow="Metodo" title="How I build" note="craft + AI">
         <p>
           At work I build LLM-powered features into products used by hundreds of thousands of people. On my own
           projects, AI agents are part of the workshop, and every project goes through the same three steps.
@@ -63,23 +80,6 @@ export function Home() {
             <li key={step.name}>
               <h3>{step.name}</h3>
               <p>{step.text}</p>
-            </li>
-          ))}
-        </ol>
-      </Section>
-
-      <Section id="experience" numeral="III" eyebrow="Percorso" title="Experience" note="since 2022">
-        <ol className="timeline">
-          {experience.map((role) => (
-            <li key={role.org}>
-              <span className="when">
-                {role.start}–{role.end ?? 'now'}
-              </span>
-              <div>
-                <h3>{role.org}</h3>
-                <p className="role">{role.title}</p>
-                {role.summary && <p>{role.summary}</p>}
-              </div>
             </li>
           ))}
         </ol>

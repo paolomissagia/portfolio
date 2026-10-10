@@ -16,7 +16,7 @@ export const experience: Role[] = [
   },
   {
     org: 'Computershare',
-    title: 'Software Engineer, Edinburgh',
+    title: 'Software Engineer',
     start: 2022,
     end: 2024,
     summary: 'A client platform for 45,000+ companies: React, Spring Boot, and the move to Azure.',
