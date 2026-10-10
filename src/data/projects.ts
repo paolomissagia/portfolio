@@ -19,8 +19,8 @@ export const projects: ProjectData[] = [
   },
   {
     name: 'biketoride',
-    url: 'https://biketoride.vercel.app',
-    label: 'biketoride.vercel.app',
+    url: 'https://biketoride.cc',
+    label: 'biketoride.cc',
     description: 'Pick your road bike and size, and get the Zwift Ride settings that match its fit.',
     palette: ['#1d2a4d', '#ff5d3a'],
   },
