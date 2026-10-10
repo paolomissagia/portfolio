@@ -1,7 +1,8 @@
 # portfolio
 
 Source for [paolomissagia.com](https://www.paolomissagia.com): a single-page
-portfolio, and the entry point for anyone looking for me online.
+portfolio, and the entry point for anyone looking for me online. Brand and
+voice: [BRAND.md](BRAND.md).
 
 ## Stack
 
