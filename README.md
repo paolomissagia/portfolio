@@ -35,6 +35,9 @@ npm run preview   # serve the production build locally
   unknown paths
 - `scripts/og-image.html`: source for `public/og.png`, the link-preview image
 - `test/brand.test.ts`: checks the source against BRAND.md's writing rules
+- `test/seo.test.ts`: checks what search engines and link previews read (head
+  tags, share image, robots.txt, sitemap, 404), from the shared template in
+  `dotfiles/templates/vite-react`
 
 ## Deployment
 
