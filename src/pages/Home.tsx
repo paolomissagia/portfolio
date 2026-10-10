@@ -25,7 +25,7 @@ export function Home() {
               Paolo <em>Missagia</em>
             </h1>
             <p className="hero-line">
-              Full stack developer, crafting software with AI
+              Full stack developer, handcrafting software with AI
               <span className="cursor" aria-hidden="true" />
             </p>
             <p className="hero-sub">Currently at MAPAL Group.</p>
