@@ -33,17 +33,25 @@ npm run preview   # serve the production build locally
 - `src/data/`: projects, experience and contact links; content changes go here
 - `src/pages/NotFound.tsx`: rendered into `404.html`, which Vercel serves for
   unknown paths
+- `src/site.ts`: the site's address and name, used by canonical links, the
+  share card and the sitemap
 - `scripts/og-image.html`: source for `public/og.png`, the link-preview image
 - `test/brand.test.ts`: checks the source against BRAND.md's writing rules
 
 ## Build-time rendering
 
-`npm run build` renders each page to static HTML, so search engines, AI
-crawlers and link previews get the full content without running JavaScript.
-`src/pages.tsx` lists the pages; `src/entry-server.tsx` renders them in an SSR
-build; `scripts/prerender.mjs` writes the HTML into `dist/index.html` and
-`dist/404.html`, writes `dist/sitemap.xml` with today's date, and removes the
-SSR build. In the browser, `src/mount.tsx` hydrates that HTML.
+Follows the shared template in `dotfiles/templates/vite-react` (see its
+README). `npm run build` renders each page to static HTML, so search engines,
+AI crawlers and link previews get the full content without running
+JavaScript. `src/pages.tsx` maps each path to its page; `src/entry-server.tsx`
+renders them in an SSR build; `scripts/prerender.mjs` writes `dist/index.html`
+and `dist/404.html`, then `dist/sitemap.xml` and `dist/robots.txt`. In the
+browser, `src/mount.tsx` hydrates that HTML.
+
+Each page sets its title, description, share card and structured data with
+`<PageMeta>`; `index.html` only holds what every page shares.
+`src/seo.test.ts` renders every page and checks what a search engine would
+read.
 
 ## Deployment
 

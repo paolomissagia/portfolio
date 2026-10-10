@@ -1,4 +1,6 @@
 import { mount } from './mount'
-import { pages } from './pages'
+import { pageFor } from './pages'
+import './reset.css'
+import './index.css'
 
-mount(pages.home)
+mount(pageFor(window.location.pathname))

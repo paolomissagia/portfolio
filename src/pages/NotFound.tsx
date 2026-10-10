@@ -1,6 +1,14 @@
+import { PageMeta } from '../components/page-meta'
+
 export function NotFound() {
   return (
     <section className="hero" aria-labelledby="title">
+      <PageMeta
+        title="Page not found · Paolo Missagia"
+        description="This page doesn’t exist, or it has moved."
+        path="/404"
+        noindex
+      />
       <div className="row">
         <p className="note">
           404

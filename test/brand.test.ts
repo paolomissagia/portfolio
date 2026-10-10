@@ -8,7 +8,6 @@ const sources = [
     .filter((f) => /\.(tsx?|css)$/.test(f))
     .map((f) => join('src', f)),
   'index.html',
-  '404.html',
   'scripts/og-image.html',
   'BRAND.md',
   'test/brand.test.ts',

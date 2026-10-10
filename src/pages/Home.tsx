@@ -1,8 +1,10 @@
+import { PageMeta } from '../components/page-meta'
 import { Section } from '../components/Section'
 import { WorkCard } from '../components/WorkCard'
 import { experience } from '../data/experience'
 import { EMAIL, links } from '../data/links'
 import { projects } from '../data/projects'
+import { site } from '../site'
 
 const steps = [
   { name: 'Brief', text: 'A brand and a spec before any code: who it is for, how it sounds, what it must get right.' },
@@ -10,9 +12,43 @@ const steps = [
   { name: 'Check', text: 'I review every change. Tests, sourced facts and a clean build keep the work honest.' },
 ]
 
+/** Who the page is about, for search engines (schema.org). */
+const person = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: site.name,
+  url: `${site.url}/`,
+  jobTitle: 'Full Stack Developer',
+  worksFor: { '@type': 'Organization', name: 'MAPAL Group' },
+  alumniOf: { '@type': 'CollegeOrUniversity', name: 'The Open University' },
+  knowsLanguage: ['it', 'en', 'de'],
+  knowsAbout: [
+    'Agentic coding',
+    'LLM integration',
+    'Full stack development',
+    'TypeScript',
+    'React',
+    'Angular',
+    'Python',
+    'Django',
+    'Java',
+    'Spring Boot',
+  ],
+  email: `mailto:${EMAIL}`,
+  sameAs: links.map((link) => link.href),
+}
+
 export function Home() {
   return (
     <>
+      <PageMeta
+        title="Paolo Missagia · Full stack developer"
+        description="Paolo Missagia, full stack developer, handcrafting software with AI. Experience, projects, how I build and contact."
+        path="/"
+        type="profile"
+        image={{ url: '/og.png', width: 1200, height: 630, alt: 'Paolo Missagia, full stack developer, handcrafting software with AI' }}
+        jsonLd={person}
+      />
       <section className="hero" aria-labelledby="name">
         <div className="row">
           <p className="note">

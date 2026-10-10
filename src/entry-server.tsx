@@ -1,8 +1,21 @@
 import { StrictMode } from 'react'
 import { renderToString } from 'react-dom/server'
-import { pages, type PageName } from './pages'
+import { notFoundPath, pageFor } from './pages'
 
-/** Renders a page to HTML at build time, so crawlers and link previews get the content without running JavaScript. */
-export function render(page: PageName): string {
-  return renderToString(<StrictMode>{pages[page]}</StrictMode>)
+/*
+ * The pages scripts/prerender.mjs writes at build time, so crawlers and link previews get
+ * the content without running JavaScript (see the template in dotfiles/templates/vite-react).
+ */
+
+export { site } from './site'
+export { notFoundPath }
+
+export function routes() {
+  return [{ path: '/' }]
+}
+
+export const unlisted: string[] = []
+
+export function render(path: string) {
+  return renderToString(<StrictMode>{pageFor(path)}</StrictMode>)
 }
