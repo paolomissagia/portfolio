@@ -16,9 +16,9 @@ export function Home() {
       <section className="hero" aria-labelledby="name">
         <div className="row">
           <p className="note">
-            born in Italy
+            building software
             <br />
-            building since 2022
+            since 2022
           </p>
           <div className="hero-body">
             <h1 id="name">

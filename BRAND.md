@@ -34,7 +34,7 @@ Hero line: *Full stack developer, crafting software with AI.*
 
 **Name the practice, not the product.** The site says AI and agents, never a specific tool or vendor: the craft is working with AI, whichever tools that means this year.
 
-**No home city.** Location is not part of the brand and may change. The site names no city; Italy is where he comes from, not where he lives.
+**No home city.** Location is not part of the brand and may change. The site names no city, and doesn't state where he was born: Italy shows through the accents (Bodoni, the Italian eyebrows, «A presto»), never as a biography line.
 
 ### Content rules
 
@@ -105,7 +105,7 @@ The pairing is the brand in miniature: an eighteenth-century Italian serif for t
 ## Signature elements
 
 - **The hero as a title page.** Name in large Bodoni, one line on what he does ("Full stack developer, crafting software with AI"), set on generous paper with nothing else competing. A vermilion text cursor blinks after the last line, a nod to the terminal the old site was built around (static with reduced motion).
-- **Margin notes.** On wide screens, short mono annotations sit in the left margin beside the text they belong to, like a scholar's notes in an old book or a log from the tools: `built with AI agents`, `first version in two days`, `born in Italy`. On narrow screens they drop above their paragraph. This is where the agentic work lives visually: quiet, factual, always there.
+- **Margin notes.** On wide screens, short mono annotations sit in the left margin beside the text they belong to, like a scholar's notes in an old book or a log from the tools: `built with AI agents`, `first version in two days`, `since 2022`. On narrow screens they drop above their paragraph. This is where the agentic work lives visually: quiet, factual, always there.
 - **The method in three steps** under *Metodo*: **Brief** (a brand and a spec before any code), **Build** (agents write much of the code, he steers), **Check** (he reviews every change; tests and sources keep it honest). Numbered because it is a real sequence.
 - **Workshop cards for projects.** Each project is a card with its name in Bodoni, one sentence on what it does, a mono build log (stack, how it was built, time taken), and a link. Each card may show a small swatch of that project's own palette, a craftsman showing different pieces from the same bench.
 - **Hairline rules** in Linea between sections, and a short vermilion rule under each eyebrow.
