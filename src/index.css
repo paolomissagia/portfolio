@@ -1,0 +1,202 @@
+@import '@fontsource-variable/jetbrains-mono';
+
+/* Palette and type. The redesign will replace these with the tokens in BRAND.md. */
+:root {
+  --navy: #222436;
+  --lime: #c3e88d;
+  --rose: #ff757f;
+  --periwinkle: #c8d3f5;
+
+  --bg: var(--navy);
+  --text: var(--periwinkle);
+  --link: var(--lime);
+  --accent: var(--rose);
+
+  --mono: 'JetBrains Mono Variable', ui-monospace, monospace;
+}
+
+html {
+  font-family: var(--mono);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 48rem;
+  padding-inline: 1rem;
+  background: var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Header and footer */
+
+.site-header,
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.prompt-command {
+  color: var(--link);
+}
+
+.prompt-cursor {
+  display: inline-block;
+  width: 0.6em;
+  margin-left: 0.1em;
+  border-bottom: 2px solid var(--link);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .prompt-cursor {
+    animation: blink 1s steps(1) infinite;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.site-footer-note {
+  display: none;
+}
+
+.rule {
+  border-color: var(--accent);
+}
+
+main {
+  padding-block: 2.25rem;
+}
+
+@media (min-width: 40rem) {
+  .site-header {
+    padding-block: 2.25rem;
+  }
+
+  .site-footer {
+    justify-content: space-between;
+    padding-block: 2.25rem;
+  }
+
+  .site-footer-note {
+    display: inline;
+  }
+}
+
+/* Home */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.intro {
+  margin-bottom: 1.5rem;
+}
+
+.intro h1,
+.not-found h1 {
+  margin-bottom: 2rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.intro-body,
+.not-found {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.links {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 1.3em;
+}
+
+.links a {
+  display: inline-flex;
+}
+
+.links svg {
+  width: 1em;
+  height: 1em;
+}
+
+/* A dashed rule, like the gaps in a command-line prompt. */
+.dashes {
+  align-self: center;
+  width: 75%;
+  height: 0.25rem;
+  background: repeating-linear-gradient(90deg, var(--accent) 0 12px, transparent 12px 30px) left top / 100% 1px
+    repeat-x;
+}
+
+.projects {
+  margin-top: 1.5rem;
+}
+
+.projects h2 {
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.project h3 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 40rem) {
+  .intro h1,
+  .not-found h1 {
+    font-size: 38px;
+  }
+
+  .intro-body,
+  .not-found {
+    font-size: 1.25rem;
+  }
+}

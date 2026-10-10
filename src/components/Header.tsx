@@ -1,16 +1,17 @@
-import { ReactTyped } from "react-typed";
+import { useTyped } from './useTyped'
 
-export default function Header() {
+const COMMANDS = ['cd', 'git', 'sudo', 'docker', 'vim', 'ls', 'tmux']
+
+export function Header() {
+  const command = useTyped(COMMANDS)
+
   return (
-    <header className="flex flex-row items-center justify-center py-4 text-lg sm:py-9">
-      pmissagia:~$
-      <ReactTyped
-        className="text-secondary"
-        strings={["cd", "git", "sudo", "docker", "vim", "ls", "tmux"]}
-        typeSpeed={120}
-        backSpeed={120}
-        loop
-      />
+    <header className="site-header">
+      {/* Decorative: screen readers would hear the command change every few hundred ms. */}
+      <span aria-hidden="true">
+        pmissagia:~$ <span className="prompt-command">{command}</span>
+        <span className="prompt-cursor" />
+      </span>
     </header>
-  );
+  )
 }

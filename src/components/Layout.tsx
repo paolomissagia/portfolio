@@ -1,16 +1,15 @@
-import type { ReactNode } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import HorizontalBar from "./HorizontalBar";
+import type { ReactNode } from 'react'
+import { Footer } from './Footer'
+import { Header } from './Header'
 
-export default function Layout({ children }: { children: ReactNode }) {
+export function Layout({ children }: { children: ReactNode }) {
   return (
     <>
       <Header />
-      <HorizontalBar />
-      <main className="py-9">{children}</main>
-      <HorizontalBar />
+      <hr className="rule" />
+      <main>{children}</main>
+      <hr className="rule" />
       <Footer />
     </>
-  );
+  )
 }
