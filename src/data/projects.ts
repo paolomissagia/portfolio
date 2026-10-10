@@ -7,7 +7,7 @@ export interface ProjectData {
 export const projects: ProjectData[] = [
   {
     name: 'Sonatina',
-    url: 'https://sonatina.vercel.app',
+    url: 'https://www.sonatina.eu',
     description:
       'A friendly guide to classical music: works, composers and listening guides, with real recordings to play',
   },

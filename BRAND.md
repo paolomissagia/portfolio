@@ -122,13 +122,19 @@ Each gets a sentence or two under *Fuori orario*, linked to the project it inspi
 
 ## Facts we use
 
-From Paolo and his public LinkedIn profile:
+From Paolo, his CV and his public LinkedIn profile. The site never claims more than this.
 
 - Born in **Italy**, based in **Edinburgh, Scotland, UK**
-- Software developer at **MAPAL Group**
-- **The Open University**, 2019–2022
+- **Full Stack Developer, MAPAL Group**, Feb 2024 – present (remote; the company is in Dresden). Angular and Python (Django) on a learning platform with 500,000+ monthly users; LLM-powered chatbot features across several products; 50+ REST endpoints; reviews, mentoring, tests, releases.
+- **Software Engineer, Computershare**, Edinburgh, Sep 2022 – Feb 2024. React and Java (Spring Boot) on a client platform for 45,000+ companies; migration from on-premises to Azure with Docker and Kubernetes.
+- **BSc (Hons) Computing & IT, The Open University**, 2019–2022
+- Professional developer since 2022: say "four years" only while it is true, or better, let the dates speak.
+- Languages: Italian (native), English (fluent), German (A2)
+- Main stack: TypeScript, React, Angular, Python (Django), Java (Spring Boot), Docker, Kubernetes, AWS, Azure
 
-To confirm before publishing: job title, years of experience, earlier roles, main stack.
+The phone number stays off the site: email and LinkedIn are the ways in.
+
+The LLM work at MAPAL is the professional side of the agentic story: he ships AI features at work and builds with agents at home. Tell both, plainly.
 
 ## Links
 
